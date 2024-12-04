@@ -49,9 +49,12 @@ Project Impact
 This project helps Home Credit achieve its dual goals:
 
 Promoting Financial Inclusion: By leveraging alternative data, the model evaluates creditworthiness even for unbanked customers.
+
 Enhancing Profitability: Accurate risk predictions enable smarter loan approvals and minimize defaults.
 Discussion Points for Interview
+
 Model Comparison: Discuss the strengths and trade-offs of logistic regression versus ensemble methods like Gradient Boosting.
+
 Business Integration: How this model can be deployed and monitored for real-time loan applications.
 Challenges & Solutions: Addressing imbalanced data, feature engineering, and handling low Kaggle scores.
 Future Improvements: Possible enhancements in feature selection or incorporating more robust data augmentation techniques.
