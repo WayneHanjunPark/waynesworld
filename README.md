@@ -1,60 +1,28 @@
-# waynesworld
-Date: December 4th, 2024
-
-
 Home Credit Default Risk Analysis
-Project Overview
-The Home Credit Default Risk project leverages machine learning to predict the likelihood of loan default for potential borrowers. This supports lenders in making informed credit decisions, aligning with Home Credit’s mission to promote financial inclusion while minimizing financial risks.
+Summary of Business Problem and Project Objective
+Financial institutions often struggle with minimizing loan defaults while promoting financial inclusion for customers lacking traditional credit histories. The objective of this project is to develop a machine learning model that predicts the likelihood of loan default. By leveraging diverse data sources, the solution aims to enhance risk management while supporting the lender’s mission of empowering underbanked individuals.
 
-Business Value
-By accurately identifying high-risk borrowers, this project provides:
+Group's Solution
+Our team implemented and evaluated multiple machine learning models, including Logistic Regression, Random Forest, and Gradient Boosting, to predict default risks. After rigorous testing, the Gradient Boosting model emerged as the best solution due to its superior AUC score and balance between precision and recall. The model effectively identifies high-risk borrowers while ensuring financial inclusivity.
 
-Reduced Loan Defaults: Enables better risk management by identifying borrowers more likely to default.
-Financial Inclusion: Assesses creditworthiness for clients with limited or no traditional credit history, ensuring fair evaluation.
-Improved Loan Approvals: Ensures reliable borrowers receive approvals, enhancing profitability and customer satisfaction.
-Methodology
-Data Preprocessing
-Addressed missing values, scaled numerical features, and encoded categorical variables.
-Integrated various demographic, transactional, and alternative data sources to enrich feature sets.
-Model Development & Evaluation
-Logistic Regression Models (Model 1, Model 2, Interaction):
+My Contribution
+Data Preprocessing: Handled missing values, encoded categorical variables, and scaled numerical features.
+Feature Engineering: Designed new features such as debt-to-income ratio and optimized dimensionality reduction techniques.
+Model Development and Evaluation: Focused on tuning the Gradient Boosting model and compared it with other models using key metrics (e.g., AUC, precision, recall).
+Documentation: Authored the README, summarizing the project’s business value, methodology, and results, and ensured clear, professional use of notebooks.
 
-Accuracy: ~91.9%
-AUC: ~0.615
-F1 Score: ~0.957 (high precision and perfect recall)
-Insight: These models perform well on overall metrics but show only moderate discrimination between classes.
-Random Forest:
+Business Value of the Solution
+Reduces Loan Defaults: By identifying high-risk borrowers, the model minimizes financial losses.
+Supports Financial Inclusion: Uses non-traditional data sources to assess creditworthiness for underbanked individuals.
+Optimizes Loan Approvals: Balances accuracy and inclusivity, ensuring reliable borrowers receive loans.
+Difficulties Encountered
 
-Accuracy: ~59%
-AUC: 0.607
-F1 Score: ~0.574 (lower precision and recall)
-Insight: While reasonably accurate in identifying true positives, it underperforms compared to other models.
-Gradient Boosting:
+Imbalanced Data: The dataset had a class imbalance, which we addressed using SMOTE and class weighting techniques.
+Model Overfitting: Gradient Boosting models showed a tendency to overfit on training data, mitigated through hyperparameter tuning and cross-validation.
+Kaggle Score Limitations: Despite the model's good metrics locally, Kaggle scores (Private: 0.5000, Public: 0.5000) highlighted a need for further improvement.
 
-Accuracy: ~91.9%
-AUC: 0.617 (highest among models)
-F1 Score: ~0.957 (perfect recall and high precision)
-Insight: This model shows the best ability to distinguish between borrowers who will default and those who will not.
-Key Metric: Kaggle Score
-Private Score: 0.5000
-Public Score: 0.5000
-While the Kaggle scores indicate room for improvement, the Gradient Boosting model aligns well with project goals and demonstrates potential in production environments.
-
-Recommendations
-The Gradient Boosting Model is the most suitable choice due to its:
-
-High accuracy and AUC, which ensure reliable predictions.
-Superior ability to capture all true positives, aiding financial inclusion.
-Project Impact
-This project helps Home Credit achieve its dual goals:
-
-Promoting Financial Inclusion: By leveraging alternative data, the model evaluates creditworthiness even for unbanked customers.
-
-Enhancing Profitability: Accurate risk predictions enable smarter loan approvals and minimize defaults.
-Discussion Points for Interview
-
-Model Comparison: Discuss the strengths and trade-offs of logistic regression versus ensemble methods like Gradient Boosting.
-
-Business Integration: How this model can be deployed and monitored for real-time loan applications.
-Challenges & Solutions: Addressing imbalanced data, feature engineering, and handling low Kaggle scores.
-Future Improvements: Possible enhancements in feature selection or incorporating more robust data augmentation techniques.
+What I Learned
+The importance of handling imbalanced datasets effectively to prevent skewed predictions.
+Advanced feature engineering techniques to extract meaningful insights from raw data.
+The role of hyperparameter tuning in optimizing model performance.
+Interpreting machine learning model results in a business context for actionable insights.
