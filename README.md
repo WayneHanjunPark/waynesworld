@@ -1,35 +1,51 @@
-Home Credit Default Risk Analysis
+📊 Capstone: Swire Coca-Cola Logistics Optimization
 
-Summary of Business Problem and Project Objective
+✅ Business Problem
+Swire Coca-Cola operates two delivery methods: white truck (ARTM) for low-volume customers and red truck (direct delivery) for higher-volume ones. Our business challenge was to identify high-growth potential customers currently on ARTM who should be moved to red truck delivery, enabling cost-efficient logistics while fueling future growth.
 
-Financial institutions often struggle with minimizing loan defaults while promoting financial inclusion for customers lacking traditional credit histories. The objective of this project is to develop a machine learning model that predicts the likelihood of loan default. By leveraging diverse data sources, the solution aims to enhance risk management while supporting the lender’s mission of empowering underbanked individuals.
+✅ Our Solution
+We used a combination of XGBoost classification models and decision trees to segment customers by growth potential. By analyzing transactional volume, delivery frequency, cost-per-delivery, and order channel, we identified which ARTM customers show signs of scaling and should be prioritized for red truck service.
 
-Group's Solution
+We also evaluated bulk ordering strategies to reduce delivery frequency, which could result in up to 56.6% cost savings per customer. Route optimization and ZIP-level targeting were also explored to guide implementation.
 
-Our team implemented and evaluated multiple machine learning models, including Logistic Regression, Random Forest, and Gradient Boosting, to predict default risks. After rigorous testing, the Gradient Boosting model emerged as the best solution due to its superior AUC score and balance between precision and recall. The model effectively identifies high-risk borrowers while ensuring financial inclusivity.
 
-My Contribution
+✅ My Contribution (Wayne Park)
+Led exploratory data analysis and delivery cost modeling using R.
 
-Data Preprocessing: Handled missing values, encoded categorical variables, and scaled numerical features.
-Feature Engineering: Designed new features such as debt-to-income ratio and optimized dimensionality reduction techniques.
-Model Development and Evaluation: Focused on tuning the Gradient Boosting model and compared it with other models using key metrics (e.g., AUC, precision, recall).
-Documentation: Authored the README, summarizing the project’s business value, methodology, and results, and ensured clear, professional use of notebooks.
+Developed ARIMA forecasting (benchmarked, not deployed) to evaluate growth trends.
 
-Business Value of the Solution
+Designed bulk order cost-reduction scenarios and delivery frequency insights.
 
-Reduces Loan Defaults: By identifying high-risk borrowers, the model minimizes financial losses.
-Supports Financial Inclusion: Uses non-traditional data sources to assess creditworthiness for underbanked individuals.
-Optimizes Loan Approvals: Balances accuracy and inclusivity, ensuring reliable borrowers receive loans.
+Wrote majority of the business insights and recommendation slides.
 
-Difficulties Encountered
+Contributed to GitHub notebook structure and README documentation.
 
-Imbalanced Data: The dataset had a class imbalance. The SMOTE and class weighting techniques were used.
-Model Overfitting: Gradient Boosting models showed a tendency to overfit on training data, mitigated through hyperparameter tuning and cross-validation.
-Kaggle Score Limitations: Despite the model's good metrics locally, Kaggle scores (Private: 0.5000, Public: 0.5000) highlighted a need for further improvement.
 
-What I Learned
+✅ Business Value of Our Solution
+Cost Reduction: Reducing high-frequency deliveries (232 to 100/year) could save $380–$525 per customer annually.
 
-The importance of handling imbalanced datasets effectively to prevent skewed predictions.
-Advanced feature engineering techniques to extract meaningful insights from raw data.
-The role of hyperparameter tuning in optimizing model performance.
-Interpreting machine learning model results in a business context for actionable insights.
+Targeted Growth: Prioritizing red truck service in ZIPs with high volume and low delivery cost (e.g., KS, MA) improves ROI.
+
+Sales Enablement: Empowering reps with predictive insights fosters stronger customer relationships and higher retention.
+
+Strategic Expansion: Market-level analysis (e.g., Kansas as a hub) provides a roadmap for smart logistics investments.
+
+
+✅ Difficulties We Encountered
+Delivery frequency data was noisy and highly skewed, requiring multiple data cleaning passes.
+
+Growth rate calculation was sensitive to outliers and inconsistent customer behavior.
+
+Integrating cost data from multiple sources (cases vs. gallons, per truck type) introduced merging challenges.
+
+Our early ARIMA forecasting was not predictive enough due to volatility in the data.
+
+
+✅ What I Learned
+How to use R and modeling (e.g., XGBoost) to make segment-specific logistics decisions.
+
+The importance of pairing analytics with business logic — e.g., recognizing when a customer is not just growing, but also logistically affordable to serve.
+
+How to translate a technical model into an executive-facing recommendation.
+
+The importance of teamwork and iteration when refining customer-level strategies in real-world data.
