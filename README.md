@@ -34,11 +34,11 @@ Helped format and structure the final GitHub notebook and README.
 
 
 💼 Business Value of the Solution
-Cost Savings: Reducing average deliveries per customer from 232 to 100/year could save up to $380 per customer annually.
+Cost Savings: Reducing average deliveries per customer from 232 to 100 per year could yield a 56.6% reduction in delivery costs, translating to $380 saved per customer annually. This significantly improves Swire’s cost-to-serve while maintaining service levels.
 
-Growth Enablement: Identifying high-potential ARTM customers ensures they stay on direct delivery routes, supporting long-term revenue generation.
+Growth Enablement: High-potential ARTM customers are identified and retained on red truck (direct delivery), ensuring scalable customer relationships and preserving future growth. Bulk-order strategies reduce logistics strain while supporting customer retention and expansion in key ZIP codes.
 
-Operational Efficiency: Delivery frequency modeling and channel analysis empower Swire to align routing strategy with scalable customer behavior.
+Sales Rep Conversion Opportunity: With nearly 20,000 customers ordering through Sales Reps, even a 5% conversion to direct delivery—supported by performance-based incentives—could generate $130M in new revenue and $39M in annual profit, assuming a 30% margin. This unlocks significant growth through more strategic sales engagement.
 
 
 ⚠️ Difficulties We Encountered
