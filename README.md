@@ -3,10 +3,12 @@ Team 8: Wayne Park, Estefany Alvarado, Nick Acosta, Jocelyn Chang, Anais Corral
 University of Utah – MSBA Spring 2025
 
 🧩 Business Problem and Project Objective
-Swire Coca-Cola delivers products through two primary methods: ARTM (white truck) for low-volume customers and direct delivery (red truck) for higher-volume accounts. However, some ARTM customers show signs of high growth. Moving these customers to ARTM too early could limit future revenue potential, while keeping stagnant accounts on red truck routes increases unnecessary costs. Additionally, many customers place frequent low-volume orders, which inflates delivery costs.
+Swire Coca-Cola currently delivers products through two primary methods: ARTM (white truck) for low-volume customers and direct delivery (red truck) for higher-volume accounts. However, some ARTM customers are showing strong growth potential. Moving these customers to ARTM too early could limit future revenue opportunities, while keeping stagnant or declining customers on red truck routes drives up unnecessary logistics costs. Additionally, frequent low-volume orders by many customers inflate delivery costs and reduce operational efficiency.
 
-
-The objective of this project was to use data science and business analytics to (1) identify which ARTM customers are likely to grow and should remain on red truck delivery, and (2) encourage bulk ordering behavior to reduce delivery frequency and overall logistics cost.
+The objective of this project was to apply data science and business analytics to:
+(1) identify high-growth ARTM customers who should remain on red truck delivery to support long-term revenue;
+(2) recommend bulk ordering behavior to reduce delivery frequency and improve cost efficiency; and
+(3) strengthen Sales Rep engagement to drive customer loyalty, increase conversion to direct delivery, and unlock untapped revenue through performance-based incentives.
 
 
 💡 Our Group's Solution
